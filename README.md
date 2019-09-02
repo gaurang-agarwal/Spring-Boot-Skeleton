@@ -26,3 +26,13 @@ To be able to work with the docker daemon on your mac/linux host use the docker-
  `sudo kubectl port-forward <pod_name> 8000:8080`
 
  `curl http://localhost:8000/welcome`
+ 
+ ##Create configmap
+ 
+ `kubectl create -f config-map.yml`
+ 
+ ##Edit configmap
+
+`kubectl edit configmap spring-reload-example`
+
+After making changes in the configmap `curl http://localhost:8000/welcome` will give you the updated value.

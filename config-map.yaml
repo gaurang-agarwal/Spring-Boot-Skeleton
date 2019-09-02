@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: spring-reload-example
+data:
+  application.properties: |-
+    message.welcome=Hello World From Config Map
